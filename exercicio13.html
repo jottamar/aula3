@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Prof Roger Bassan | 04</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+
+        }
+        .box-nav{
+            background-color: gold;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline:none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box-nav">
+        <h1>EXERCÍCIO #12</h1>
+        <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+        <p>Faça um algoritmo em javascript que imprima a média aritmética dos números
+            8,9 e 7. A média dos números 4, 5 e 6. A soma das duas médias. A média das
+            médias. Apresente os resultados no console.</p>
+        
+    </div>
+
+    <script>
+        
+         const media1 = (8 + 9 + 7) / 3;
+         console.log(media1);
+
+         const media2 = (4 + 5 + 6) / 3;
+         console.log(media2);
+
+         const mediaTotal = media1 + media2;
+         console.log(mediaTotal);
+
+         const mediaDaMediaTotal = (media1 + media2) / 2;
+         console.log(mediaDaMediaTotal);
+        
+    </script>
+</body>
+</html>

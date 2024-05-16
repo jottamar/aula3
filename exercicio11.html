@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Prof Roger Bassan | 04</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+
+        }
+        .box-nav{
+            background-color: gold;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline:none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box-nav">
+        <h1>EXERCÍCIO #04</h1>
+        <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+        <p>Escrever um algoritmo em javascript para calcular o valor gasto de combustível de um
+            carro durante um percurso. Considere o valor do litro do combustível como sendo de 6,50
+            e o consumo do carro como sendo de 12 km/litro</p>
+        <input type="number" id="distancia" class="num" placeholder="Digite a distância percorrida">
+        <br><br>
+        <button onclick="calculation()">Enviar</button>
+    </div>
+
+    <script>
+        function calculation() {
+            const valorDoLitro = 6.5;
+            const consumoCarro = 12;
+
+            var disctanciaPercorrida = parseFloat(document.querySelector('#distancia').value);
+
+            const litrosGastos = disctanciaPercorrida/consumoCarro;
+            const valorGasto = litrosGastos*disctanciaPercorrida;
+
+            alert("Foram gastos " + litrosGastos.toFixed(2) + " litros de combustivel, totalizando R$" + valorGasto.toFixed(2));
+        }
+    </script>
+</body>
+</html>
