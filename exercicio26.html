@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Prof Roger Bassan | 04</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+
+        }
+        .box-nav{
+            background-color: gold;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline:none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box-nav">
+        <h1>EXERCÍCIO #26</h1>
+        <h2>Disciplina de Algoritmos</h2>
+    </div>
+    <div class="box">
+        <p>Faça um algoritimo</p>
+        <input type="text" id="tx" placeholder="Digite o o signo">
+        <br><br>
+
+        <button onclick="calculation()">Enviar</button>
+    </div>
+
+    <script>
+        function calculation() {
+            var texto = document.querySelector("#tx").value;
+            var signo = texto.toUppercase();
+
+            switch (signo) {
+            case "ÁRIES":
+                alert("21 de maeço a 19 de abril");
+                break;
+            case "TOURO":
+                alert("21 de abril a 20 de maio");
+                break;
+            case "GEMEOS":
+                alert("21 de maio a 20 de junho");
+                break;
+            case "CANCER":
+                alert("21 de junho a 22 de julho");
+                break;
+            case "LEÃO":
+                alert("23 de julho a 22 de agosto")
+                break;
+            case "VIRGEM":
+                alert("23 de agosto a 22 de setembro");
+                break;
+            case "LIBRA":
+                alert("23 de setembro a 22 de outubro");
+                break;
+            case "ESCORPIAO":
+                alert("23 de outubro a 21 de novembro");
+                break;
+            case "SAGITARIO":
+                alert("22 de novembro a 21 de dezembro");
+                break;
+            case "CAPRICORNIO":
+                alert("22 de dezembro e 20 de janeiro");
+                break;
+            case "AQUARIO":
+                alert("21 de janeiro a 18 de fevereiro");
+                break;
+            case "PEIXES":
+                alert("19 de fevereiro a 20 de março");
+                break;
+            default:
+                alert("Senha invalida");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
